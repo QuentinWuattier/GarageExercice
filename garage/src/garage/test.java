@@ -21,11 +21,13 @@ public class test{
         
         // Gestion des actions Action
         
-            //Gestion Execution de l'action
+            //Gestion de l'execution des l'actions
         boolean boolaction = true;
-            // Gestion 
+            // Gestion des actions
         boolean actionbool = true;
         
+        
+        // Variable Voiture
         boolean verif = false;
         String marque = "";
         int vitMax = 0;
@@ -66,11 +68,12 @@ public class test{
                 
                 // Gestion des Actions  
                 
-                if(action.equals("Y")){
+                if(boolaction){
                     
                     String actionEff = "";
                     actionbool = true;
-                    //Choisie l'action
+                    
+                    //Choix de l'action
                     while(actionbool){
                         System.out.println("Action Disponible : (delG / creatG / delVG / creatVG / delV / creatV / modifV)");
                         System.out.print("Veuillez renseigner l'action : ");
@@ -81,9 +84,10 @@ public class test{
                         else System.out.println("Action non disponnible.");
                     }
                     
+                    
                             // /#/ Action /#/ //
                             
-                    
+
                     if (actionEff.equals("creatG")){
                         // Creation d'un garage
                         System.out.println("");
@@ -272,4 +276,5 @@ public class test{
 
     
     }
+    
 }
